@@ -7,7 +7,7 @@ license = "MIT"
 links = "DiskArbitration.framework"
 name = "diskarbitration-sys"
 repository = "https://github.com/roblabla/diskarbitration-rs"
-version = "0.0.2"
+version = "0.0.3"
 
 [dependencies]
 core-foundation-sys = "0.2.2"
