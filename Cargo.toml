@@ -8,6 +8,7 @@ links = "DiskArbitration.framework"
 name = "diskarbitration-sys"
 repository = "https://github.com/roblabla/diskarbitration-rs"
 version = "0.0.4"
+edition = "2021"
 
 [dependencies]
 core-foundation-sys = "0.2.2"
