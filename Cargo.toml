@@ -7,7 +7,7 @@ license = "MIT"
 links = "DiskArbitration.framework"
 name = "diskarbitration-sys"
 repository = "https://github.com/roblabla/diskarbitration-rs"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2021"
 
 [dependencies]
