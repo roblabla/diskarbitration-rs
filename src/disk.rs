@@ -1,5 +1,5 @@
-use core_foundation_sys::base::CFAllocatorRef;
 use core_foundation_sys::url::CFURLRef;
+use core_foundation_sys::{base::CFAllocatorRef, dictionary::CFDictionaryRef};
 use libc::{c_char, c_void};
 
 use crate::session::DASessionRef;
@@ -15,4 +15,5 @@ extern "C" {
         path: CFURLRef,
     ) -> DADiskRef;
     pub fn DADiskGetBSDName(disk: DADiskRef) -> *const c_char;
+    pub fn DADiskCopyDescription(disk: DADiskRef) -> CFDictionaryRef;
 }
