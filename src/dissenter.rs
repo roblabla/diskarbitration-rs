@@ -1,3 +1,4 @@
+use core_foundation_sys::base::CFAllocatorRef;
 use core_foundation_sys::string::CFStringRef;
 use libc::{c_int, c_void};
 
@@ -10,4 +11,9 @@ pub type DAReturn = c_int;
 extern "C" {
     pub fn DADissenterGetStatus(dissenter: DADissenterRef) -> DAReturn;
     pub fn DADissenterGetStatusString(dissenter: DADissenterRef) -> CFStringRef;
+    pub fn DADissenterCreate(
+        allocator: CFAllocatorRef,
+        status: DAReturn,
+        r#str: CFStringRef,
+    ) -> DADissenterRef;
 }
