@@ -66,4 +66,5 @@ extern "C" {
     );
 
     pub static kDADiskDescriptionMatchVolumeMountable: CFDictionaryRef;
+    pub static kDADiskDescriptionDeviceProtocolKey: CFStringRef;
 }
